@@ -1,0 +1,19 @@
+node:
+  arbitrum:
+    mainnet:
+      rate_limit: 15
+  optimism:
+    mainnet:
+      rate_limit: 15
+  base:
+    base:
+      uri: https://base.llamarpc.com
+      rate_limit: 15
+
+networks:
+  custom:
+     - name: base
+       chain_id: 8453
+       ecosystem: base
+       base_ecosystem_plugin: base
+       default_provider: node
