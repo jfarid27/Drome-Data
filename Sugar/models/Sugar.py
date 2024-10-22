@@ -12,3 +12,9 @@ class Sugar:
         params = [limit, offset]
         results = self.contract.all(*params)
         return results
+
+    def fetch_pools_by_address(self, address:str, offset=0, limit=10):
+        """Return the balance of the given address."""
+        params = [limit, offset, address]
+        results = self.contract.positions(*params)
+        return results
